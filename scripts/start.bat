@@ -12,7 +12,7 @@ echo.
 cd /d "%~dp0.."
 
 echo [1/3] Building Maven modules...
-call mvn clean package -DskipTests -B
+call mvnw.cmd clean package -DskipTests -B
 if errorlevel 1 (
     echo ERROR: Maven build failed!
     pause

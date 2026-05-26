@@ -15,7 +15,7 @@ echo ""
 cd "$(dirname "$0")/.."
 
 echo "[1/3] Building Maven modules..."
-mvn clean package -DskipTests -B
+./mvnw clean package -DskipTests -B
 
 echo ""
 echo "[2/3] Building Docker images..."
